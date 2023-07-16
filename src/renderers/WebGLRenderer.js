@@ -87,8 +87,7 @@ class WebGLRenderer {
 		} = parameters;
 
 		this.isWebGLRenderer = true;
-		// if (webgl1) this.isWebGL1Renderer = true;
-		this.isWebGL1Renderer = true;
+		if (webgl1) this.isWebGL1Renderer = true;
 
 		let _alpha;
 
