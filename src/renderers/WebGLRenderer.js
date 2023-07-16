@@ -83,9 +83,11 @@ class WebGLRenderer {
 			preserveDrawingBuffer = false,
 			powerPreference = 'default',
 			failIfMajorPerformanceCaveat = false,
+			webgl1 = false,
 		} = parameters;
 
 		this.isWebGLRenderer = true;
+		if (webgl1) this.isWebGL1Renderer = true;
 
 		let _alpha;
 
